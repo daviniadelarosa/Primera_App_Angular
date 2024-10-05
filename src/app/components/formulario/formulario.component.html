@@ -1,0 +1,21 @@
+<div>
+    <input type="text" [(ngModel)]="mensaje">
+    <p>{{mensaje}}</p>
+</div>
+
+<!-- No usamos etiqueta FORM -->
+<div>
+    <div>
+        <label>Nombre</label>
+        <input type="text" [(ngModel)]="usuario.nombre">
+    </div>
+    <div>
+        <label>Dirección</label>
+        <input type="text" [(ngModel)]="usuario.direccion">
+    </div>
+    <div>
+        <label>Email</label>
+        <input type="text" [(ngModel)]="usuario.email">
+    </div>
+</div>
+{{usuario | json}}

@@ -1,0 +1,31 @@
+<app-formulario></app-formulario>
+
+<suma [num1]="3" [num2]="5" (resultadoObtenido)="onResultadoObtenido($event)"></suma>
+<suma [num1]="4" [num2]="87" (resultadoObtenido)="onResultadoObtenido($event)"></suma>
+
+
+
+<product-card [product]="arrProductos[0]"></product-card>
+<product-card [product]="arrProductos[1]"></product-card>
+<!-- <product-card [product]="arrProductos[2]"></product-card>
+<product-card [product]="arrProductos[3]"></product-card> -->
+
+
+<div class="cronos">
+    <cuenta-atras (cuentaTerminada)="onCuentaTerminada($event)" [inicio]="20" [fin]="12"></cuenta-atras>
+    <cuenta-atras (cuentaTerminada)="onCuentaTerminada($event)" [inicio]="5" [fin]="1"></cuenta-atras>
+    <cuenta-atras (cuentaTerminada)="onCuentaTerminada($event)" [inicio]="13" [fin]="4"></cuenta-atras>
+    <cuenta-atras (cuentaTerminada)="onCuentaTerminada($event)" [inicio]="2" [fin]="-8"></cuenta-atras>
+</div>
+
+<!--
+<saludo></saludo>
+
+<propiedades></propiedades>
+
+<app-eventos></app-eventos>
+
+<profile-card name="Mario" surname="Girón" email="mario@gmail.com" [age]="40"></profile-card>
+<profile-card name="Inés" surname="Romero" email="ines@gmail.com" [age]="12"></profile-card>
+<profile-card name="Lucas" surname="González" email="lucas@gmail.com" [age]="76"></profile-card>
+-->
